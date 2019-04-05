@@ -1,0 +1,30 @@
+#!/bin/bash
+# replacing strings in files
+# script wird gestartet mit: 'sudo bash ./replaceStringsInFiles'
+# funktioniert wie folgt: 's+string to replace+replacement+g'
+
+sed -i 's+/workspace_bluefish/BallinGL/+/+g' Ballin.js
+sed -i 's+/workspace_bluefish/BallinGL/+/+g' ShaderCreator.js
+sed -i 's+/workspace_bluefish/BallinGL/+/+g' BufferCreator.js
+sed -i 's+/workspace_bluefish/BallinGL/+/+g' SphereFactory.js
+sed -i 's+/workspace_bluefish/BallinGL/+/+g' Camera.js
+sed -i 's+/workspace_bluefish/BallinGL/+/+g' LightSource.js
+sed -i 's+/workspace_bluefish/BallinGL/+/+g' Sphere.js
+sed -i 's+/workspace_bluefish/BallinGL/+/+g' CircleFactory.js
+sed -i 's+/workspace_bluefish/BallinGL/+/+g' Line.js
+sed -i 's+/workspace_bluefish/BallinGL/+/+g' STL_Parser.js
+sed -i 's+/workspace_bluefish/BallinGL/+/+g' Circle.js
+sed -i 's+/workspace_bluefish/BallinGL/+/+g' Magnet.js
+sed -i 's+/workspace_bluefish/BallinGL/+/+g' StringParserBD.js
+sed -i 's+/workspace_bluefish/BallinGL/+/+g' Court.js
+sed -i 's+/workspace_bluefish/BallinGL/+/+g' MathBD.js
+sed -i 's+/workspace_bluefish/BallinGL/+/+g' temp_test.js
+sed -i 's+/workspace_bluefish/BallinGL/+/+g' Cube.js
+sed -i 's+/workspace_bluefish/BallinGL/+/+g' Polygon.js
+sed -i 's+/workspace_bluefish/BallinGL/+/+g' Torus.js
+sed -i 's+/workspace_bluefish/BallinGL/+/+g' TorusMeshData.js
+sed -i 's+/workspace_bluefish/BallinGL/+/+g' GL_Shape.js
+sed -i 's+/workspace_bluefish/BallinGL/+/+g' RectGenerator.js
+sed -i 's+/workspace_bluefish/BallinGL/+/+g' WebGL2Test.js
+sed -i 's+/workspace_bluefish/BallinGL/+/+g' GLSL_Functions.js
+sed -i 's+/workspace_bluefish/BallinGL/+/+g' WebGL_Handwriting.js

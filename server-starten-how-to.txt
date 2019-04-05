@@ -1,0 +1,14 @@
+damit das hier laeuft:
+	mit Python3:
+	1. local server einrichten/starten: 'python3 -m http.server'
+	2. im Browser folgende 'seite' aufrufen: 'http://localhost:8000/index.html'
+	
+	mit nodejs:
+	1. local server einrichten/starten:
+		1.1 zum ordner /home/bigdaddy/workspace_bluefish/BallinGL navigieren und im Terminal eingeben:
+			'node /home/bigdaddy/workspace_bluefish/node_modules/http-server/bin/http-server'
+	2. im Browser folgende 'seite' aufrufen: 'http://localhost:8080/'
+		-> wichtig: bei chrome immer nach jeder code-veraenderung den cache leeren:
+			2.1: '...' -> 'more tools...' -> 'clear browing data' -> 'cached images and files' loeschen, alles andere kann bleiben
+				 am besten den reiter geoeffnet halten. zum loeschen einfach nur zum reiter gehen 
+				 und 2 mal schnell auf enter drucken -> cache geleert!
