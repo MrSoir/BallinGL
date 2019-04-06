@@ -5,7 +5,6 @@ import {Torus} from "/code/Torus.js";
 
 class Magnet{
 	constructor(glMeta, center, radius, color=[0.2, 0.2, 0.2, 1]){
-				
 		this.center = center;
 		this.radius = radius;
 		this.rotate = [0,0,0];
@@ -29,7 +28,7 @@ class Magnet{
 	// der benutzer frontal auf den magnet/torus starrt:
 	setMousePos(mousePos, canvasBounds){
 		let canvasCenter = {x: canvasBounds.x + canvasBounds.width  * 0.5,
-						    y: canvasBounds.y + canvasBounds.height * 0.5};
+						    	  y: canvasBounds.y + canvasBounds.height * 0.5};
 		
 		let pos2D;
 		// je nachdem, ob mousePos als {x: ?, y: ?} oder als [x,y] angeliefert wird:
@@ -47,13 +46,14 @@ class Magnet{
 		
 		this.angle = angle;
 	}
-	setRelMousePos(dx, dy){
-		
+	setRelMousePos(dx, dy){		
 		let angle = MathBD.getTanDegr(dx, dy);
 		
 		angle = (angle + 90) % 360;
 		
-		this.angle = angle;
+		if(!!angle){
+			this.angle = angle;
+		}
 	}
 	
 	increaseAngle(offset){

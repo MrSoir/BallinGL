@@ -32,7 +32,7 @@ var ballinMeta = {};
 var ballinHelper;
 
 function xBarChanged(val){
-	console.log(val);
+//	console.log(val);
 	document.getElementById('xRangeTxt').value = this.value;
 }
 
@@ -138,7 +138,7 @@ function setKeyListeners(){
 		if (event.ctrlKey) {
 			// Even though event.key is not 'Control' (e.g., 'a' is pressed),
 			// event.ctrlKey may be true if Ctrl key is pressed at the same time.
-			console.log(`Combination of ctrlKey + ${keyName}`);
+//			console.log(`Combination of ctrlKey + ${keyName}`);
 		} else {
 			switch(keyName){
 				case 'w':
@@ -201,6 +201,7 @@ function setKeyListeners(){
 					break;
 				case 'c':
 					ballinHelper.setCameraAutoRotation();
+					break;
 				default:
 					console.log(`Key pressed ${keyName}`);
 			}
@@ -272,7 +273,7 @@ function setMouseMoveBallin(){
 			let dx = evnt.beta;
 			let dy = -evnt.gamma;
 	
-			if( enoughTimeElapsedForRevaluation() ){
+			if( enoughTimeElapsedForRevaluation() && !!dx && !!dy ){
 				ballinHelper.setRelMousePos(dx, dy);
 			}
 		}
@@ -438,6 +439,10 @@ function interruptGameLoop(){
 
 //------------------------------------------------------------------
 
-main();
+//main();
 
+document.addEventListener('DOMContentLoaded', function() {
+	console.log('document loaded -> starting main loop!');
+   main();
+}, false);
 

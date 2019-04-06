@@ -5,7 +5,7 @@ import {Torus} from "/code/Torus.js";
 
 class Magnet{
 	constructor(glMeta, center, radius, color=[0.2, 0.2, 0.2, 1]){
-				
+		console.log('Magnet-constructor');
 		this.center = center;
 		this.radius = radius;
 		this.rotate = [0,0,0];
@@ -16,10 +16,11 @@ class Magnet{
 		this.puffer = 15;				// puffer == wie breit soll der angle-indicator werden
 		this.indicator_puffer = 0.2;	// indicator_puffer == puffer, damit der indicator sauber, glatt und geschmeidig aussieht
 		
-		this.force = 1.5;
+		this.force = 5;
 	}
 	
 	getAngle(){
+		console.log('angle: ', this.angle);
 		return this.angle + 90;
 	}
 	
@@ -28,8 +29,9 @@ class Magnet{
 	// x und eine y aber keine z-komponente enthaelt. damit wird implizit davon ausgegangen, dass beim bewegen der maus
 	// der benutzer frontal auf den magnet/torus starrt:
 	setMousePos(mousePos, canvasBounds){
+		console.log('setMousePos!');
 		let canvasCenter = {x: canvasBounds.x + canvasBounds.width  * 0.5,
-						    y: canvasBounds.y + canvasBounds.height * 0.5};
+						    	  y: canvasBounds.y + canvasBounds.height * 0.5};
 		
 		let pos2D;
 		// je nachdem, ob mousePos als {x: ?, y: ?} oder als [x,y] angeliefert wird:
@@ -48,15 +50,19 @@ class Magnet{
 		this.angle = angle;
 	}
 	setRelMousePos(dx, dy){
+		console.log('setRelMousePos: dx: ', dx, '  dy: ', dy);
 		
 		let angle = MathBD.getTanDegr(dx, dy);
 		
 		angle = (angle + 90) % 360;
 		
-		this.angle = angle;
+		if(!!angle){
+			this.angle = angle;
+		}
 	}
 	
 	increaseAngle(offset){
+		console.log('increaseAngle');
 		this.angle = (this.angle + offset);
 		if(this.angle < 0){
 			this.angle = 360.0 + this.angle;
@@ -81,6 +87,7 @@ class Magnet{
 	}
 
 	setAngle(pos){
+		console.log('setAngle');
 		let center = this.center;
 		let dir = v3.normalize(v3.sub(pos, center));
 		

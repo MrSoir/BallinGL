@@ -206,7 +206,6 @@ class Court{
 	paint(glMeta){
 		
 		if(this.cubeHole === undefined){
-			console.log('creating CubeHole');
 			let lightningMeta = GL_Shape.genLightningMeta();
 			lightningMeta.ambientFctr = 0.3;
 			

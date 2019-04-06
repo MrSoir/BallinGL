@@ -24,7 +24,7 @@ class Court{
 		this.level = level;
 		
 		// jedes mal beim resizen muessen die borders neu berechnet werden!!!:
-		this.gateFctr = 0.5;
+		this.gateFctr = 0.4;
 		
 		this.maxGates = 4;
 		this.genGates();
