@@ -1,6 +1,6 @@
-import {GL_Shape} from "/code/GL_Shape.js";
-import {m4,v4, v3, MathBD, genTransformationInfo} from "/code/MathBD.js";
-import {CircleFactory} from "/code/CircleFactory.js";
+import {GL_Shape} from "./GL_Shape.js";
+import {m4,v4, v3, MathBD, genTransformationInfo} from "./MathBD.js";
+import {CircleFactory} from "./CircleFactory.js";
 
 class Circle extends GL_Shape{
 	constructor(glMeta, pos, radius, color = [1,0,0]){

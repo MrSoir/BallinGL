@@ -1,5 +1,5 @@
-import '/code/gl-matrix.js';
-import {MathBD, m4, v4, v3, genTransformationInfo} from '/code/MathBD.js';
+import './gl-matrix.js';
+import {MathBD, m4, v4, v3, genTransformationInfo} from './MathBD.js';
 
 
 class Camera{

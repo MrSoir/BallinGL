@@ -1,7 +1,7 @@
-import '/code/gl-matrix.js';
-import {m4,v4, v3, v2, MathBD, genTransformationInfo} from "/code/MathBD.js";
+import './gl-matrix.js';
+import {m4,v4, v3, v2, MathBD, genTransformationInfo} from "./MathBD.js";
 
-import {GL_Shape} from "/code/GL_Shape.js";
+import {GL_Shape} from "./GL_Shape.js";
 
 class Particle{
 	constructor(pos, vel, color, maturity =  MathBD.rndNumbGen(50, 200)){

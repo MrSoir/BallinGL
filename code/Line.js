@@ -1,5 +1,5 @@
-import {GL_Shape} from "/code/GL_Shape.js";
-import {RectGenerator} from "/code/RectGenerator.js";
+import {GL_Shape} from "./GL_Shape.js";
+import {RectGenerator} from "./RectGenerator.js";
 
 class Line extends GL_Shape{
 	constructor(glMeta, positions, color = [1,0,0]){

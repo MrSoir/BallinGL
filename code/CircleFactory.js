@@ -1,5 +1,5 @@
-import {MathBD, m4, v4, v3} from '/code/MathBD.js';
-import {Polygon} from '/code/Polygon.js';
+import {MathBD, m4, v4, v3} from './MathBD.js';
+import {Polygon} from './Polygon.js';
 
 class CircleFactory{
 	constructor(radius=1, steps=20, normal = [0,0,-1]){

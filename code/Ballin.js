@@ -1,10 +1,10 @@
-import '/code/gl-matrix.js';
-import {m4,v4, v3, v2, MathBD, genTransformationInfo} from "/code/MathBD.js";
+import './gl-matrix.js';
+import {m4,v4, v3, v2, MathBD, genTransformationInfo} from "./MathBD.js";
 
-import {Ball} from '/code/Ball.js';
-import {Court} from '/code/Court.js';
-import {Magnet} from "/code/Magnet.js";
-import {Triangle} from "/code/Triangle.js";
+import {Ball} from './Ball.js';
+import {Court} from './Court.js';
+import {Magnet} from "./Magnet.js";
+import {Triangle} from "./Triangle.js";
 
 class Ballin{
 	constructor(glMeta){

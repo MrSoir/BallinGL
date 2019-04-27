@@ -1,7 +1,7 @@
-import '/code/gl-matrix.js';
-import {m4,v4, v3, MathBD, genTransformationInfo} from "/code/MathBD.js";
-import {GLSL_Functions} from "/code/GLSL_Functions.js";
-import {GL_Shape} from "/code/GL_Shape.js";
+import './gl-matrix.js';
+import {m4,v4, v3, MathBD, genTransformationInfo} from "./MathBD.js";
+import {GLSL_Functions} from "./GLSL_Functions.js";
+import {GL_Shape} from "./GL_Shape.js";
 
 class Cube extends GL_Shape{
 	constructor(glMeta, transformationData=genTransformationInfo(), color=[0,1,0]){

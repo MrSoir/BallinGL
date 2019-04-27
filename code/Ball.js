@@ -1,7 +1,7 @@
-import '/code/gl-matrix.js';
-import {m4,v4, v3, v2, MathBD, genTransformationInfo} from "/code/MathBD.js";
-import {Sphere} from '/code/Sphere.js';
-import {Particle} from '/code/Particle.js';
+import './gl-matrix.js';
+import {m4,v4, v3, v2, MathBD, genTransformationInfo} from "./MathBD.js";
+import {Sphere} from './Sphere.js';
+import {Particle} from './Particle.js';
 
 class Ball{
 	constructor(radius = 1.0, mass = 10, color = [1,0,0,1], center = [0,0,0], vel = [1,0,0], gateId = 0, ballId = 0){

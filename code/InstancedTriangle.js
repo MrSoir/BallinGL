@@ -1,6 +1,6 @@
-import '/code/gl-matrix.js';
-import {m4,v4, v3, v2, MathBD} from "/code/MathBD.js";
-import {ShaderFactory} from '/code/ShaderCreator.js';
+import './gl-matrix.js';
+import {m4,v4, v3, v2, MathBD} from "./MathBD.js";
+import {ShaderFactory} from './ShaderCreator.js';
 
 
 

@@ -1,4 +1,4 @@
-import '/code/gl-matrix.js';
+import './gl-matrix.js';
 
 var MathBD = {
 	toRadians: function(x){

@@ -1,6 +1,6 @@
-import '/code/gl-matrix.js';
-import {m4,v4, v3, v2, MathBD, genTransformationInfo} from "/code/MathBD.js";
-import {Torus} from "/code/Torus.js";
+import './gl-matrix.js';
+import {m4,v4, v3, v2, MathBD, genTransformationInfo} from "./MathBD.js";
+import {Torus} from "./Torus.js";
 
 
 class Magnet{

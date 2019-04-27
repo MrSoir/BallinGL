@@ -1,11 +1,11 @@
-import '/code/gl-matrix.js';
-import {m4,v4, v3, MathBD, genTransformationInfo} from "/code/MathBD.js";
-import {GLSL_Functions} from "/code/GLSL_Functions.js";
-import {GL_Shape} from "/code/GL_Shape.js";
-import {STL_Parser} from "/code/STL_Parser.js";
-import {TorusMeshData} from "/code/TorusMeshData.js";
-import {TorusMeshDataOBJ} from "/code/TorusMeshDataOBJ.js";
-import {CubeHoleMeshData} from '/code/CubeHoleMeshData.js';
+import './gl-matrix.js';
+import {m4,v4, v3, MathBD, genTransformationInfo} from "./MathBD.js";
+import {GLSL_Functions} from "./GLSL_Functions.js";
+import {GL_Shape} from "./GL_Shape.js";
+import {STL_Parser} from "./STL_Parser.js";
+import {TorusMeshData} from "./TorusMeshData.js";
+import {TorusMeshDataOBJ} from "./TorusMeshDataOBJ.js";
+import {CubeHoleMeshData} from './CubeHoleMeshData.js';
 
 
 class Torus extends GL_Shape{

@@ -19,14 +19,14 @@ damit das hier laeuft:
 
 // da das programm derzeit auf dem localserver gestartet wird, muessen die imports mit den (fast vollstaendigen)
 // dateipfaden angegeben werden:
-import '/code/gl-matrix.js';
+import './gl-matrix.js';
 import {MathBD,
 		  m4, v4, v3,
-		  genTransformationInfo} from '/code/MathBD.js';
-import {Camera} from '/code/Camera.js';
-import {Ball} from "/code/Ball.js";
-import {Ballin} from '/code/Ballin.js';
-import {BallinHelper} from '/code/WebGL2Test.js';
+		  genTransformationInfo} from './MathBD.js';
+import {Camera} from './Camera.js';
+import {Ball} from "./Ball.js";
+import {Ballin} from './Ballin.js';
+import {BallinHelper} from './WebGL2Test.js';
 
 var ballinMeta = {};
 var ballinHelper;

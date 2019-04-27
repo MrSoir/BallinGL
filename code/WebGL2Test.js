@@ -1,17 +1,17 @@
 "use strict";
 
-import {ShaderFactory} from '/code/ShaderCreator.js';
-import {MathBD, m4, v4, v3, genTransformationInfo} from '/code/MathBD.js';
-import {Camera} from '/code/Camera.js';
-import {Ballin} from '/code/Ballin.js';
-import {Cube} 	from '/code/Cube.js';
-import {Sphere} from '/code/Sphere.js';
-import {LightSource} from '/code/LightSource.js';
-import {Line} from "/code/Line.js";
-import {Circle} from "/code/Circle.js";
-import {Torus} from '/code/Torus.js';
-import {InstancedTriangle} from '/code/InstancedTriangle.js';
-import {Background} from "/code/Background.js";
+import {ShaderFactory} from './ShaderCreator.js';
+import {MathBD, m4, v4, v3, genTransformationInfo} from './MathBD.js';
+import {Camera} from './Camera.js';
+import {Ballin} from './Ballin.js';
+import {Cube} 	from './Cube.js';
+import {Sphere} from './Sphere.js';
+import {LightSource} from './LightSource.js';
+import {Line} from "./Line.js";
+import {Circle} from "./Circle.js";
+import {Torus} from './Torus.js';
+import {InstancedTriangle} from './InstancedTriangle.js';
+import {Background} from "./Background.js";
 
 class BallinHelper{
 	constructor(){

@@ -1,9 +1,9 @@
-import '/code/gl-matrix.js';
-import {m4,v4, v3, MathBD, genTransformationInfo} from "/code/MathBD.js";
-import {GLSL_Functions} from "/code/GLSL_Functions.js";
-import {ShaderFactory} from '/code/ShaderCreator.js';
-import {StringParserBD} from "/code/StringParserBD.js";
-import {LightningCodeGenrator} from "/code/LightningCode.js";
+import './gl-matrix.js';
+import {m4,v4, v3, MathBD, genTransformationInfo} from "./MathBD.js";
+import {GLSL_Functions} from "./GLSL_Functions.js";
+import {ShaderFactory} from './ShaderCreator.js';
+import {StringParserBD} from "./StringParserBD.js";
+import {LightningCodeGenrator} from "./LightningCode.js";
 
 var shaders = {
 	getVertexShaderSource: function(lightningMeta, customUniforms, instancingMeta){

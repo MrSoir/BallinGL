@@ -1,7 +1,7 @@
-import '/code/gl-matrix.js';
-import {m4,v4, v3, MathBD} from "/code/MathBD.js";
+import './gl-matrix.js';
+import {m4,v4, v3, MathBD} from "./MathBD.js";
 
-import {StringParserBD} from '/code/StringParserBD.js';
+import {StringParserBD} from './StringParserBD.js';
 
 var GLSL_Functions = {
 	getAmbientDiffuseSpecularGLSLFunction: function(ambientFctr = 0.3, specularPower = 32.0){

@@ -1,6 +1,6 @@
-import {MathBD, m4, v4,v3, genTransformationInfo} from '/code/MathBD.js';
-import {Polygon} from '/code/Polygon.js';
-import {bindDataToBuffer} from '/code/BufferCreator.js';
+import {MathBD, m4, v4,v3, genTransformationInfo} from './MathBD.js';
+import {Polygon} from './Polygon.js';
+import {bindDataToBuffer} from './BufferCreator.js';
 
 class SphereFactory{
 	constructor(radius = 1, m = 20, n = 20){

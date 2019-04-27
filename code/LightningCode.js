@@ -1,4 +1,4 @@
-import {GLSL_Functions} from "/code/GLSL_Functions.js";
+import {GLSL_Functions} from "./GLSL_Functions.js";
 
 
 function LightningCodeGenrator(lightningMeta){
