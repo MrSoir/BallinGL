@@ -334,7 +334,10 @@ class Ballin{
 		dt *= 0.1;
 		
 		if(this.allGameBallsInGates){
-			alert("Congrats! You've mastered this level!");
+			document.getElementById('UserInfo').style.opacity = '1';
+			setTimeout(()=>{
+				document.getElementById('UserInfo').style.opacity = '0';
+			}, 2000);
 			this.allGameBallsInGates = false;
 			this.nextLevel();
 		}

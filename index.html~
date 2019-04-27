@@ -29,7 +29,7 @@
 			<p class="tab">	- grey balls: obstacles </p>
 			<p class="tab">	- differently colored balls: target balls </p>
 			<br/>
-			The aim of the game: Try to hit the target balls with your red players balls to push them into the colored gates. 
+			The aim of the game: Try to hit the target balls with your players balls to push them into the colored gates. 
 			The green balls have to be pushed into the blue gate, the blue balls into the blut gate... you get it!
 			Before a target ball is allowed to enter its gate, it has to be activated. To activate a target ball, you have
 			to hit it with your red players balls. An active target ball radiates particles. After a activated target ball

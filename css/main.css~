@@ -16,10 +16,6 @@ body {
 	transform: translate(-50%, -50%);
 	opacity: 0;
 	transition-duration: 1s;
-	
-	background-color: #44444488;
-	border: 2px solid black;
-	padding: 10px;
 }
 #GameDescription{
 	width: 80%;
