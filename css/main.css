@@ -37,6 +37,11 @@ body {
 	border: 4px solid black;
 	padding: 20px;
 }
+#GameDescriptionText{
+	max-height: 60vh;
+	overflow-y: scroll;
+	padding-right: 20px;
+}
 .BallinHeading{
 	font-size: 20px;
 	text-align: center;
@@ -51,26 +56,38 @@ body {
 	cursor: pointer;
 }
 
-@media screen and (max-width : 400px)
+@media screen and (max-height : 400px)
 {
   #GameDescription{
-  	font-size: 10px;
+  	font-size: 8px;
   }
 }
-@media screen and (min-width : 400px)
+@media screen and (min-height : 400px)
+{
+  #GameDescription{
+  	font-size: 9px;
+  }
+}
+@media screen and (min-height : 600px)
 {
   #GameDescription{
   	font-size: 12px;
   }
 }
-@media screen and (min-width : 600px)
+@media screen and (min-height : 600px)
 {
   #GameDescription{
-  	font-size: 15px;
+  	font-size: 13px;
+  }
+}
+@media screen and (min-height : 800px)
+{
+  #GameDescription{
+  	font-size: 14px;
   }
 }
 .tab{
-	margin-left: 40px;
+	margin-left: 2em;
 }
 
 .whiteLbls{
